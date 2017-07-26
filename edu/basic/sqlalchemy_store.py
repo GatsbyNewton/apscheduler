@@ -41,6 +41,7 @@ if __name__ == '__main__':
         'coalesce': False,
         'max_instances': 3
     }
+
     scheduler = BackgroundScheduler(executors=executors, job_defaults=job_defaults)
     # scheduler.add_jobstore('sqlalchemy', url=url)
 
