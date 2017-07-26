@@ -42,7 +42,7 @@ if __name__ == '__main__':
         'max_instances': 3
     }
 
-    scheduler = BackgroundScheduler(executors=executors, job_defaults=job_defaults)
+    scheduler = BackgroundScheduler(jobstores=jobstores, executors=executors, job_defaults=job_defaults)
     # scheduler.add_jobstore('sqlalchemy', url=url)
 
     start = datetime.strptime('2017-07-22 11:32:00', '%Y-%m-%d %H:%M:%S')
